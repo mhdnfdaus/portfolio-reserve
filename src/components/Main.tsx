@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 type MainProps = {
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 const Main = ({ children }: MainProps) => {
