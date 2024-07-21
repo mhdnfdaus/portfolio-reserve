@@ -1,8 +1,14 @@
-const Main = ({ children }) => {
+import { ReactNode } from 'react';
+
+type MainProps = {
+  children: ReactNode;
+};
+
+const Main = ({ children }: MainProps) => {
   return (
     <>
       <div role="main" className="main transformZ0">
-        { children }
+        {children}
       </div>
     </>
   );
