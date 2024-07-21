@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 type MainProps = {
   children?: ReactNode;
 };
 
-const Body: React.FC<MainProps> = ({ children }) => {
+const Body = ({ children } : MainProps) => {
   return (
     <div className="body" data-scroll-container>
       {children}

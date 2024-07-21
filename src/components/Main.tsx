@@ -1,10 +1,10 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 type MainProps = {
   children?: ReactNode;
 };
 
-const Main: React.FC<MainProps> = ({ children }) => {
+const Main = ({ children } : MainProps) => {
   return (
       <div role="main" className="main transformZ0">
         {children}
