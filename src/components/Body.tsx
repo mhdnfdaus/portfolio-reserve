@@ -4,13 +4,11 @@ type MainProps = {
   children?: ReactNode;
 };
 
-const Body = ( { children } : MainProps ) => {
+const Body: React.FC<MainProps> = ({ children }) => {
   return (
-    <>
-      <div className="body" data-scroll-container>
-        { children}
-      </div>
-    </>
+    <div className="body" data-scroll-container>
+      {children}
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ type MainProps = {
   children?: ReactNode;
 };
 
-const Main = ({ children }: MainProps) => {
+const Main: React.FC<MainProps> = ({ children }) => {
   return (
     <>
       <div role="main" className="main transformZ0">
